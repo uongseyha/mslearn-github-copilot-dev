@@ -16,40 +16,27 @@ public class JsonLoanRepository : ILoanRepository
     {
         await _jsonData.EnsureDataLoaded();
 
-        foreach (Loan loan in _jsonData.Loans!)
-        {
-            if (loan.Id == id)
-            {
-                Loan populated = _jsonData.GetPopulatedLoan(loan);
-                return populated;
-            }
-        }
-        return null;
+        return _jsonData.Loans!
+            .Where(loan => loan.Id == id)
+            .Select(_jsonData.GetPopulatedLoan)
+            .FirstOrDefault();
     }
 
     public async Task UpdateLoan(Loan loan)
     {
-        Loan? existingLoan = null;
-        foreach (Loan l in _jsonData.Loans!)
-        {
-            if (l.Id == loan.Id)
-            {
-                existingLoan = l;
-                break;
-            }
-        }
+        Loan? existingLoan = _jsonData.Loans!
+            .FirstOrDefault(existing => existing.Id == loan.Id);
 
-        if (existingLoan != null)
-        {
-            existingLoan.BookItemId = loan.BookItemId;
-            existingLoan.PatronId = loan.PatronId;
-            existingLoan.LoanDate = loan.LoanDate;
-            existingLoan.DueDate = loan.DueDate;
-            existingLoan.ReturnDate = loan.ReturnDate;
+        if (existingLoan is null)
+            return;
 
-            await _jsonData.SaveLoans(_jsonData.Loans!);
+        existingLoan.BookItemId = loan.BookItemId;
+        existingLoan.PatronId = loan.PatronId;
+        existingLoan.LoanDate = loan.LoanDate;
+        existingLoan.DueDate = loan.DueDate;
+        existingLoan.ReturnDate = loan.ReturnDate;
 
-            await _jsonData.LoadData();
-        }
+        await _jsonData.SaveLoans(_jsonData.Loans!);
+        await _jsonData.LoadData();
     }
 }

@@ -1,0 +1,1 @@
+create a "ToDo" web app using Next.js. The app is single-user with no authentication; all tasks are shared by the one local user.
