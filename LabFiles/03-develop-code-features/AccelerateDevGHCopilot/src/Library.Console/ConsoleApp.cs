@@ -244,7 +244,7 @@ public class ConsoleApp
     async Task<ConsoleState> SearchBooks()
     {
         string? bookTitle = null;
-        while (string.IsNullOrWhiteSpace(bookTitle))
+        while (String.IsNullOrWhiteSpace(bookTitle))
         {
             Console.Write("Enter a book title to search for: ");
             bookTitle = Console.ReadLine();
