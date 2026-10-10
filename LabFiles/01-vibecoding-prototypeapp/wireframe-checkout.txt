@@ -1,0 +1,45 @@
+FRUIT BASKET PROTOTYPE - CHECKOUT PAGE
+
+DESKTOP / WIDE VIEW
+
++----------------------+----------------------------------------------+
+| FRUIT BASKET         | Checkout                            Cart (2) |
++----------------------+----------------------------------------------+
+|   Products           | Order Summary                               |
+|   ProductDetails     | ------------------------------------------   |
+|   ShoppingCart       | Apples              2 lb          $3.98     |
+| > Checkout           | Bananas             1 lb          $0.59     |
+|                      | ------------------------------------------   |
+|                      | Total                             $4.57     |
+|                      |                                              |
+|                      | [Back to Shopping Cart] [Process Order]      |
++----------------------+----------------------------------------------+
+
+Process Order simulates submission only. It does not request payment or call
+an external service. After processing, display a clear order confirmation and
+clear the cart.
+
+EMPTY CART STATE
+
++----------------------+----------------------------------------------+
+| FRUIT BASKET         | Checkout                            Cart (0) |
++----------------------+----------------------------------------------+
+|   Products           | Your cart is empty.                         |
+|   ProductDetails     | [Browse Products]                            |
+|   ShoppingCart       |                                              |
+| > Checkout           | Order processing is unavailable.             |
++----------------------+----------------------------------------------+
+
+NARROW VIEW
+
++------+-------------------------+
+| FB   | Checkout          Cart  |
++------+-------------------------+
+|   P  | Order Summary             |
+|  PD  | Apples        2 lb $3.98  |
+|  SC  | Bananas       1 lb $0.59  |
+| > C  | ------------------------  |
+|      | Total:          $4.57    |
+|      | [Back to Cart]             |
+|      | [Process Order]            |
++------+-------------------------+

@@ -1,0 +1,38 @@
+FRUIT BASKET PROTOTYPE - PRODUCTS PAGE
+
+DESKTOP / WIDE VIEW
+
++----------------------+----------------------------------------------+
+| FRUIT BASKET         | Products                          Cart (2)  |
++----------------------+----------------------------------------------+
+| > Products           | Browse fruit                                 |
+|   ProductDetails     |                                              |
+|   ShoppingCart       | +------------------+  +------------------+ |
+|   Checkout           | | 🍎 Apples        |  | 🍌 Bananas       | |
+|                      | | $1.99 / pound    |  | $0.59 / pound    | |
+|                      | | Qty [1]          |  | Qty [1]          | |
+|                      | | [Add to Cart]    |  | [Add to Cart]    | |
+|                      | | [View details]   |  | [View details]   | |
+|                      | +------------------+  +------------------+ |
+|                      | ... remaining fruit products ...           |
++----------------------+----------------------------------------------+
+
+Each product card repeats for all 10 products. The product list may scroll.
+Add to Cart adds the selected positive whole-number quantity to the cart.
+View details opens ProductDetails for that product.
+
+NARROW VIEW
+
++------+-------------------------+
+| FB   | Products          Cart  |
++------+-------------------------+
+| > P  | Browse fruit             |
+|  PD  | +-----------------------+|
+|  SC  | | 🍎 Apples              ||
+|   C  | | $1.99 / pound         ||
+|      | | Qty [1]               ||
+|      | | [Add to Cart]         ||
+|      | | [View details]        ||
+|      | +-----------------------+|
+|      | ... more products ...   |
++------+-------------------------+

@@ -1,0 +1,45 @@
+FRUIT BASKET PROTOTYPE - SHOPPING CART PAGE
+
+DESKTOP / WIDE VIEW
+
++----------------------+----------------------------------------------+
+| FRUIT BASKET         | Shopping Cart                      Cart (2) |
++----------------------+----------------------------------------------+
+|   Products           | Product             Qty       Total         |
+|   ProductDetails     | ------------------------------------------   |
+| > ShoppingCart       | 🍎 Apples            [-] 2 [+]  $3.98 [Remove]|
+|   Checkout           | 🍌 Bananas           [-] 1 [+]  $0.59 [Remove]|
+|                      |                                              |
+|                      | Subtotal:                         $4.57      |
+|                      | [Continue Shopping]       [Checkout]         |
++----------------------+----------------------------------------------+
+
+Show one row for each cart item. Update the line total when quantity changes.
+Removing an item deletes its row. Invalid quantities must not be accepted.
+
+EMPTY CART STATE
+
++----------------------+----------------------------------------------+
+| FRUIT BASKET         | Shopping Cart                      Cart (0) |
++----------------------+----------------------------------------------+
+|   Products           | Your cart is empty.                         |
+|   ProductDetails     | [Browse Products]                            |
+| > ShoppingCart       |                                              |
+|   Checkout           |                                              |
++----------------------+----------------------------------------------+
+
+NARROW VIEW
+
++------+-------------------------+
+| FB   | Shopping Cart     Cart  |
++------+-------------------------+
+|   P  | Apples                         |
+|  PD  | Qty [-] 2 [+]       $3.98    |
+| > SC | [Remove]                       |
+|   C  | Bananas                        |
+|      | Qty [-] 1 [+]       $0.59    |
+|      | [Remove]                       |
+|      | Subtotal:           $4.57    |
+|      | [Continue Shopping]           |
+|      | [Checkout]                     |
++------+-------------------------+

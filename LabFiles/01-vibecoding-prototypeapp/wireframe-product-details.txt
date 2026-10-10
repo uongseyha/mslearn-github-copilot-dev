@@ -1,0 +1,34 @@
+FRUIT BASKET PROTOTYPE - PRODUCT DETAILS PAGE
+
+DESKTOP / WIDE VIEW
+
++----------------------+----------------------------------------------+
+| FRUIT BASKET         | Product Details                    Cart (2) |
++----------------------+----------------------------------------------+
+|   Products           | [< Back to Products]                         |
+| > ProductDetails     |                                              |
+|   ShoppingCart       | +------------------------------------------+ |
+|   Checkout           | |                  🍓                      | |
+|                      | |              Strawberries                | |
+|                      | | Sweet strawberries, sold by the          | |
+|                      | | container.                                | |
+|                      | | Price: $3.99 per container               | |
+|                      | +------------------------------------------+ |
++----------------------+----------------------------------------------+
+
+The displayed product is the one selected from Products. The back action
+returns to Products. If no product is selected, direct the shopper to Products.
+
+NARROW VIEW
+
++------+-------------------------+
+| FB   | Product Details   Cart  |
++------+-------------------------+
+|   P  | [< Back to Products]     |
+| > PD |                         |
+|  SC  |            🍓           |
+|   C  |       Strawberries      |
+|      | Sweet strawberries,      |
+|      | sold by the container.   |
+|      | $3.99 per container      |
++------+-------------------------+

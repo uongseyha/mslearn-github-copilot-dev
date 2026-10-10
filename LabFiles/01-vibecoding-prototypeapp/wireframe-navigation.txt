@@ -1,0 +1,37 @@
+FRUIT BASKET PROTOTYPE - NAVIGATION WIREFRAME
+
+EXPANDED SIDEBAR (viewport 300px or wider)
+
++----------------------+----------------------------------------------+
+| FRUIT BASKET         | Page title                         Cart (2)  |
++----------------------+----------------------------------------------+
+| > Products           |                                              |
+|   ProductDetails     |               PAGE CONTENT                   |
+|   ShoppingCart       |                                              |
+|   Checkout           |                                              |
+|                      |                                              |
++----------------------+----------------------------------------------+
+
+The current page is marked with >. Selecting an item navigates to that page.
+The main content area uses the space to the right of the sidebar.
+
+COLLAPSED SIDEBAR (viewport narrower than 300px)
+
++------+-------------------------+
+| FB   | Page title        Cart  |
++------+-------------------------+
+| > P  |                         |
+|   PD |     PAGE CONTENT        |
+|   SC |                         |
+|   C  |                         |
++------+-------------------------+
+
+P  = Products
+PD = ProductDetails
+SC = ShoppingCart
+C  = Checkout
+FB = Fruit Basket
+
+Each abbreviated navigation item remains clickable/tappable and has its full
+page name as its accessible name. Mark the active page with > in either state.
+On narrow screens, the page content can use a single-column layout.

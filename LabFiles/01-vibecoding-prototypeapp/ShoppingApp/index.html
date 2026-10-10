@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f8f2">
+    <title>Fruit Basket | Fresh fruit, simply picked</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Store navigation">
+        <a class="brand" href="#products" aria-label="Fruit Basket home">
+          <span class="brand-mark" aria-hidden="true">FB</span>
+          <span class="brand-name">Fruit<br>Basket</span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Main navigation">
+          <a href="#products" data-page="products" aria-label="Products" aria-current="page">
+            <span class="nav-short" aria-hidden="true">P</span>
+            <span class="nav-full">Products</span>
+          </a>
+          <a href="#details" data-page="details" aria-label="Product details">
+            <span class="nav-short" aria-hidden="true">PD</span>
+            <span class="nav-full">ProductDetails</span>
+          </a>
+          <a href="#cart" data-page="cart" aria-label="Shopping cart">
+            <span class="nav-short" aria-hidden="true">SC</span>
+            <span class="nav-full">ShoppingCart</span>
+          </a>
+          <a href="#checkout" data-page="checkout" aria-label="Checkout">
+            <span class="nav-short" aria-hidden="true">C</span>
+            <span class="nav-full">Checkout</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-note" aria-hidden="true">
+          <span class="sidebar-note-mark">✳</span>
+          <span>Good things<br>grow here.</span>
+        </div>
+      </aside>
+
+      <div class="workspace">
+        <header class="topbar">
+          <div class="page-heading">
+            <p class="eyebrow">THE FRUIT STAND</p>
+            <h1 id="page-title">Products</h1>
+          </div>
+          <button class="cart-shortcut" id="cart-shortcut" type="button" aria-label="Shopping cart, 0 products">
+            <span class="cart-icon" aria-hidden="true">🛒</span>
+            <span class="cart-label">Basket</span>
+            <span class="cart-count" id="cart-count">0</span>
+          </button>
+        </header>
+
+        <main id="page-content" tabindex="-1"></main>
+      </div>
+    </div>
+
+    <div class="live-message" id="live-message" role="status" aria-live="polite"></div>
+  </body>
+</html>
